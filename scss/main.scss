@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+$paragraphs-white: hsla(0, 0%, 100%, 0.75);
+$bg-headings-btns: hsl(0, 0%, 95%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background: #f4f4f4;
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  line-height: 1.5;
+
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  // display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  // height: 100%;
+  border-radius: 10px;
+}
+
+section {
+  padding: 2.4rem;
+}
+
+#section-sedans {
+  background: $bright-orange;
+  border-radius: 15px 0 0 15px;
+
+  .btn {
+    color: $bright-orange;
+
+    &:hover {
+      background: $bright-orange;
+      color: #f4f4f4;
+    }
+  }
+}
+
+#section-suvs {
+  background: $dark-cyan;
+
+  .btn {
+
+    color: $dark-cyan;
+
+    &:hover {
+      background: $dark-cyan;
+      color: #f4f4f4;
+    }
+  }
+}
+
+#section-luxurys {
+  background: $very-dark-cyan;
+  border-radius: 0 15px 15px 0;
+
+  .btn {
+    color: $very-dark-cyan;
+
+    &:hover {
+      background: $very-dark-cyan;
+      color: #f4f4f4;
+    }
+  }
+}
+
+.title {
+  font-family: 'Big Shoulders Display';
+  font-size: 2.7rem;
+  color: $bg-headings-btns;
+  font-weight: 700;
+  padding: 2rem 0;
+}
+
+.description {
+  color: $paragraphs-white;
+  font-weight: 400;
+  padding-bottom: 5rem;
+}
+
+.btn {
+  padding: 1rem;
+  border-radius: 30px;
+  width: 140px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background: none;
+    border: 1px solid #f4f4f4;
+  }
+}
+
+.attribution {
+  margin-top: 5px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@import 'mobile';

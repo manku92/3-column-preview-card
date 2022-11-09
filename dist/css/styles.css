@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background: #f4f4f4;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+}
+
+section {
+  padding: 2.4rem;
+}
+
+#section-sedans {
+  background: hsl(31deg, 77%, 52%);
+  border-radius: 15px 0 0 15px;
+}
+#section-sedans .btn {
+  color: hsl(31deg, 77%, 52%);
+}
+#section-sedans .btn:hover {
+  background: hsl(31deg, 77%, 52%);
+  color: #f4f4f4;
+}
+
+#section-suvs {
+  background: hsl(184deg, 100%, 22%);
+}
+#section-suvs .btn {
+  color: hsl(184deg, 100%, 22%);
+}
+#section-suvs .btn:hover {
+  background: hsl(184deg, 100%, 22%);
+  color: #f4f4f4;
+}
+
+#section-luxurys {
+  background: hsl(179deg, 100%, 13%);
+  border-radius: 0 15px 15px 0;
+}
+#section-luxurys .btn {
+  color: hsl(179deg, 100%, 13%);
+}
+#section-luxurys .btn:hover {
+  background: hsl(179deg, 100%, 13%);
+  color: #f4f4f4;
+}
+
+.title {
+  font-family: "Big Shoulders Display";
+  font-size: 2.7rem;
+  color: hsl(0deg, 0%, 95%);
+  font-weight: 700;
+  padding: 2rem 0;
+}
+
+.description {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-weight: 400;
+  padding-bottom: 5rem;
+}
+
+.btn {
+  padding: 1rem;
+  border-radius: 30px;
+  width: 140px;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background: none;
+  border: 1px solid #f4f4f4;
+}
+
+.attribution {
+  margin-top: 5px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  body {
+    place-content: center;
+  }
+  .container {
+    flex-direction: column;
+    max-width: 280px;
+  }
+  #section-sedans,
+  #section-luxurys {
+    border-radius: 0;
+  }
+  .title {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+  }
+  .description {
+    font-size: 0.85rem;
+    padding-bottom: 2rem;
+  }
+  .btn {
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,28 @@
+@media(max-width: 375px){
+
+  body{
+    place-content: center;
+  }
+ 
+  .container{
+    flex-direction: column;
+    max-width: 280px;
+  }
+  
+  #section-sedans,
+  #section-luxurys{
+    border-radius: 0;
+  }
+  .title{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+  }
+  .description{
+    font-size: 0.85rem;
+    padding-bottom: 2rem;
+  }
+  .btn{
+    font-size: 0.80rem;
+    padding: 1rem;
+  }
+}
